@@ -9,6 +9,6 @@ output "subnet2_id" {
     value = "${aws_subnet.subnet2.id}"
 }
 
-output "nginx-sg_id" {
-    value = "${aws_security_group.nginx-sg.id}"
+output "default-sg_id" {
+    value = "${aws_security_group.default-sg.id}"
 }

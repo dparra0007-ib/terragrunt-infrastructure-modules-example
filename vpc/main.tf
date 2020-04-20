@@ -86,9 +86,9 @@ resource "aws_route_table_association" "rta-subnet2" {
 }
 
 # SECURITY GROUPS #
-# Nginx security group 
-resource "aws_security_group" "nginx-sg" {
-  name        = "nginx_sg"
+# default security group 
+resource "aws_security_group" "default-sg" {
+  name        = "default_sg"
   vpc_id      = "${aws_vpc.vpc.id}"
 
   # SSH access from anywhere
