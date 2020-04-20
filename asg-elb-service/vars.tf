@@ -32,3 +32,21 @@ variable "elb_port" {
   description = "The port number the ELB should listen on for HTTP requests"
   type        = number
 }
+
+variable "vpc_output" {
+  description = "Output of VPC Terraform module."
+  type = object({
+    vpc_id = object({
+      id = string
+    })
+    subnet1_id = object({
+      id = string
+    })
+    subnet2_id = object({
+      id = string
+    })
+    default-sg_id = object({
+      id = string
+    })
+  })
+}
