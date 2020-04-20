@@ -2,7 +2,7 @@
 # OUTPUT
 ##################################################################################
 output "vpc_id" {
-    value = aws_vpc.id
+    value = aws_vpc.vpc.id
 }
 
 output "subnet1_id" {
