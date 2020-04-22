@@ -10,7 +10,7 @@ output "subnet1_id" {
 }
 
 output "subnet2_id" {
-    value = aws_subnet.subnet1.id
+    value = aws_subnet.subnet2.id
 }
 
 output "default-sg_id" {
