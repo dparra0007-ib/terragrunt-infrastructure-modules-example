@@ -37,3 +37,13 @@ variable "vpc_id" {
   description = "VPC ID output of VPC Terraform module."
   type = string
 }
+
+variable "subnet1_id" {
+  description = "Subnet 1 output of VPC Terraform module."
+  type = string
+}
+
+variable "subnet2_id" {
+  description = "Subnet 2 output of VPC Terraform module."
+  type = string
+}

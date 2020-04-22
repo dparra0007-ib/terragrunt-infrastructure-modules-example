@@ -122,6 +122,8 @@ resource "aws_elb" "webserver_example" {
   availability_zones = data.aws_availability_zones.all.names
   security_groups    = [aws_security_group.elb.id]
 
+  subnets = [var.subnet1_id, var.subnet2_id]
+
   listener {
     lb_port           = var.elb_port
     lb_protocol       = "http"
