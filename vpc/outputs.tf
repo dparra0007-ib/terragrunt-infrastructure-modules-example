@@ -6,5 +6,5 @@ output "vpc_id" {
 }
 
 output "default-sg_id" {
-    value = "${aws_security_group.default-sg.id}"
+    value = aws_security_group.default-sg.id
 }
