@@ -39,12 +39,6 @@ variable "vpc_output" {
     vpc_id = object({
       id = string
     })
-    subnet1_id = object({
-      id = string
-    })
-    subnet2_id = object({
-      id = string
-    })
     default-sg_id = object({
       id = string
     })
