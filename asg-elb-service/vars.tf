@@ -33,10 +33,7 @@ variable "elb_port" {
   type        = number
 }
 
-variable "vpc_output" {
-  description = "Output of VPC Terraform module."
-  type = object({
-    vpc_id = string
-    default-sg_id = string
-  })
+variable "vpc_id" {
+  description = "VPC ID output of VPC Terraform module."
+  type = string
 }
