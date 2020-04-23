@@ -27,7 +27,8 @@ terraform {
 
 resource "aws_autoscaling_group" "webserver_example" {
   launch_configuration = aws_launch_configuration.webserver_example.id
-  availability_zones   = data.aws_availability_zones.all.names
+  # availability_zones   = data.aws_availability_zones.all.names
+  vpc_zone_identifier = [var.subnet1_id, var.subnet2_id]
 
   load_balancers    = [aws_elb.webserver_example.name]
   health_check_type = "ELB"
